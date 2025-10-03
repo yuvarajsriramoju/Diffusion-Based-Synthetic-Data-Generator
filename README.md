@@ -13,12 +13,12 @@ Demonstrates how synthetic data improves classifier accuracy and exposes a **Fas
 
 ---
 
-## 🤔 Why Synthetic Data?  
+## Why Synthetic Data?  
 
 Machine learning models often struggle when:  
-- 📉 Training data is limited or imbalanced  
-- 🔒 Data privacy prevents sharing  
-- 💸 Collecting new data is expensive  
+- Training data is limited or imbalanced  
+- Data privacy prevents sharing  
+- Collecting new data is expensive  
 
 Synthetic data solves this by generating **realistic samples** that:  
 - Augment training datasets  
@@ -42,7 +42,7 @@ The pipeline:
 
 ---
 
-## 🧱 Architecture  
+## Architecture  
 
 ```mermaid
 flowchart TD
@@ -65,7 +65,7 @@ flowchart TD
 
 ---
 
-## 🔄 Sequence Diagram  
+## Sequence Diagram  
 
 ```mermaid
 sequenceDiagram
@@ -85,7 +85,7 @@ sequenceDiagram
 
 ---
 
-## ✨ Features  
+## Features  
 - 🌀 **Diffusion Model (DDPM)** for sample generation  
 - 📊 **FID Evaluation** for sample realism  
 - 🧪 **Classifier Training** with synthetic augmentation  
@@ -96,7 +96,7 @@ sequenceDiagram
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Frameworks:** PyTorch Lightning, HuggingFace Diffusers  
 - **Tracking:** MLflow  
 - **Evaluation:** Torch-Fidelity (FID)  
@@ -125,7 +125,7 @@ diffusion-synthetic-data/
 
 ---
 
-## ⚡ Quickstart  
+## Quickstart  
 
 ### 1. Install dependencies  
 ```bash
@@ -154,7 +154,7 @@ python src/train_classifier.py --use-synthetic True
 
 ---
 
-## 🌐 API (FastAPI)  
+## API (FastAPI)  
 
 Run:
 ```bash
@@ -169,7 +169,7 @@ curl -X POST http://127.0.0.1:8000/generate -H "Content-Type: application/json" 
 
 ---
 
-## 🎨 Streamlit Demo  
+## Streamlit Demo  
 
 Run:
 ```bash
@@ -180,7 +180,7 @@ Try generating digits interactively in your browser.
 
 ---
 
-## 🐳 Docker Deployment  
+## Docker Deployment  
 
 ```bash
 docker build -t mnist-diffusion-api .
@@ -189,7 +189,7 @@ docker run -p 8000:8000 mnist-diffusion-api
 
 ---
 
-## 📊 Results  
+## Results  
 - **Classifier accuracy**:  
   - Baseline (10k real only): ~86%  
   - With synthetic augmentation: **~98%** (+12%)  
@@ -197,7 +197,7 @@ docker run -p 8000:8000 mnist-diffusion-api
 
 ---
 
-## 🔮 Future Improvements  
+## Future Improvements  
 - Deploy API on **Google Cloud Run / Render**  
 - Pretrained checkpoints for faster startup  
 - Extend to datasets beyond MNIST (e.g., CIFAR-10, Fashion-MNIST)  
@@ -208,4 +208,5 @@ docker run -p 8000:8000 mnist-diffusion-api
 ## 👤 Author  
 **Yuvaraj Sriramoju**  
 - [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white&style=flat)](https://www.linkedin.com/in/yuvarajsriramoju/)   
-- [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat)](https://github.com/yuvarajsriramoju)   
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat)](https://github.com/yuvarajsriramoju)
+- [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?logo=firefox&logoColor=white&style=flat)](https://your-portfolio.com) 
