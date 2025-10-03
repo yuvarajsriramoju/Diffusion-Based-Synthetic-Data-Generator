@@ -97,13 +97,13 @@ sequenceDiagram
 ---
 
 ## Features  
-- 🌀 **Diffusion Model (DDPM)** for sample generation  
-- 📊 **FID Evaluation** for sample realism  
-- 🧪 **Classifier Training** with synthetic augmentation  
-- 🌐 **FastAPI service** for API-based generation  
-- 🎨 **Streamlit UI** for hands-on demo  
-- 🐳 **Dockerized deployment** for portability  
-- 📈 **MLflow tracking** for reproducibility  
+- **Diffusion Model (DDPM)** for sample generation  
+- **FID Evaluation** for sample realism  
+- **Classifier Training** with synthetic augmentation  
+- **FastAPI service** for API-based generation  
+- **Streamlit UI** for hands-on demo  
+- **Dockerized deployment** for portability  
+- **MLflow tracking** for reproducibility  
 
 ---
 
@@ -116,7 +116,7 @@ sequenceDiagram
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
 ```
 diffusion-synthetic-data/
 │── src/
