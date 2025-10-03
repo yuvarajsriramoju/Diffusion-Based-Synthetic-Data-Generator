@@ -29,7 +29,7 @@ This project shows how **Diffusion Models** can generate high-quality synthetic 
 
 ---
 
-## 📖 Project Explanation  
+## Project Explanation  
 
 This project implements a **Denoising Diffusion Probabilistic Model (DDPM)** trained on MNIST.  
 The pipeline:  
@@ -46,20 +46,31 @@ The pipeline:
 
 ```mermaid
 flowchart TD
+    %% Declare nodes first
+    tA["MNIST Data"]
+    tB["Diffusion Model (DDPM)"]
+    tC["Trained Model Checkpoint"]
+    gD["Generate Synthetic Digits"]
+    gE["Evaluate FID"]
+    uF["Classifier Training + Synthetic Data"]
+    uAPI["FastAPI Endpoint"]
+    uUI["Streamlit App"]
+
+    %% Group connections inside subgraphs
     subgraph Training [Training Pipeline]
-        tA[MNIST Data] --> tB[Diffusion Model (DDPM)]
-        tB --> tC[Trained Model Checkpoint]
+        tA --> tB
+        tB --> tC
     end
 
     subgraph Generation [Synthetic Data Generation]
-        tC --> gD[Generate Synthetic Digits]
-        gD --> gE[Evaluate FID]
+        tC --> gD
+        gD --> gE
     end
 
     subgraph Usage [Usage]
-        gD --> uF[Classifier Training + Synthetic Data]
-        tC --> uAPI[FastAPI Endpoint]
-        uAPI --> uUI[Streamlit App]
+        gD --> uF
+        tC --> uAPI
+        uAPI --> uUI
     end
 ```
 
