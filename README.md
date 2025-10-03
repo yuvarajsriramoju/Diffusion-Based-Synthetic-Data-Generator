@@ -1,4 +1,4 @@
-# 🌀 Diffusion-Based Synthetic Data Generator  
+# Diffusion Based Synthetic Data Generator  
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)  
 [![PyTorch Lightning](https://img.shields.io/badge/PyTorch-Lightning-orange)](https://www.pytorchlightning.ai/)  
@@ -46,20 +46,20 @@ The pipeline:
 
 ```mermaid
 flowchart TD
-    subgraph Training["Training Pipeline"]
-        A[MNIST Data] --> B[Diffusion Model (DDPM)]
-        B --> C[Trained Model Checkpoint]
+    subgraph Training [Training Pipeline]
+        tA[MNIST Data] --> tB[Diffusion Model (DDPM)]
+        tB --> tC[Trained Model Checkpoint]
     end
 
-    subgraph Generation["Synthetic Data Generation"]
-        C --> D[Generate Synthetic Digits]
-        D --> E[Evaluate FID]
+    subgraph Generation [Synthetic Data Generation]
+        tC --> gD[Generate Synthetic Digits]
+        gD --> gE[Evaluate FID]
     end
 
-    subgraph Usage["Usage"]
-        D --> F[Classifier Training + Synthetic Data]
-        C --> API[FastAPI Endpoint]
-        API --> UI[Streamlit App]
+    subgraph Usage [Usage]
+        gD --> uF[Classifier Training + Synthetic Data]
+        tC --> uAPI[FastAPI Endpoint]
+        uAPI --> uUI[Streamlit App]
     end
 ```
 
