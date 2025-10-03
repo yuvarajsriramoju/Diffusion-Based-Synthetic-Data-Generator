@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Experiments / data / outputs
+mlruns/
+synthetic/
+data/
+api_samples/
+*.ckpt
+*.pt
+*.pth
+
+# OS/editor
+.DS_Store
+Thumbs.db

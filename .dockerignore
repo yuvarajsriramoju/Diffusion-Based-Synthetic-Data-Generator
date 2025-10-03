@@ -1,0 +1,7 @@
+mlruns/
+synthetic/
+data/
+__pycache__/
+*.pt
+*.pth
+*.ckpt

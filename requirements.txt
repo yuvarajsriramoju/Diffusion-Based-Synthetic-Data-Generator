@@ -1,0 +1,14 @@
+torch
+torchvision
+pytorch-lightning
+diffusers
+mlflow
+torch-fidelity
+numpy
+pillow
+scikit-learn
+fastapi
+uvicorn
+streamlit
+requests
+
